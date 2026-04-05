@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clima&amp;Confort | Instalación y Mantenimiento de Calderas, Losas Radiantes y Climatización de Piscinas</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Instalación, reparación y mantenimiento de calderas, losas radiantes, climatización de piscinas, radiadores, termotanques y calefones. Servicio 24hs en CABA y GBA. Más de 10 años de experiencia." />
+  <meta name="keywords" content="instalación calderas, reparación calderas, mantenimiento calderas, climatización piscinas, climatizador piscina, losa radiante, radiadores, termotanques, calefones, instalación calefacción, plomería, servicio técnico calderas, CABA, zona norte, zona sur, zona oeste, Buenos Aires, calefacción central, calefacción a gas, service calderas, instalación termotanque, reparación calefón" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Clima&amp;Confort" />
+  <link rel="canonical" href="https://climayconfort.com.ar/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://climayconfort.com.ar/" />
+  <meta property="og:title" content="Clima&amp;Confort | Calderas, Losas Radiantes y Climatización de Piscinas" />
+  <meta property="og:description" content="Instalación, reparación y mantenimiento de calderas, losas radiantes, climatización de piscinas, radiadores, termotanques y calefones. Servicio 24hs los 365 días del año en CABA y GBA." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80" />
+  <meta property="og:image:alt" content="Termotanque instalado - Clima&amp;Confort" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Clima&amp;Confort" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clima&amp;Confort | Calderas y Climatización" />
+  <meta name="twitter:description" content="Servicio técnico en calderas, losas radiantes, climatización de piscinas y más. CABA y GBA." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Clima&Confort",
+    "description": "Instalación, reparación y mantenimiento de calderas, losas radiantes, climatización de piscinas, radiadores, termotanques y calefones.",
+    "telephone": "+541136013191",
+    "areaServed": ["CABA", "Zona Norte GBA", "Zona Sur GBA", "Zona Oeste GBA"],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "serviceType": ["Instalación de calderas", "Mantenimiento de calderas", "Climatización de piscinas", "Losa radiante", "Radiadores", "Termotanques", "Calefones"]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── CSS Variables ── */
+    :root {
+      --color-a: #0d2d4a;      /* Azul marino profundo */
+      --color-b: #f4f1eb;      /* Crema cálido */
+      --accent:  #e07b2e;      /* Naranja fuego */
+      --accent2: #2196a8;      /* Teal */
+      --text-light: #f4f1eb;
+      --text-dark: #1a1a2e;
+      --whatsapp: #25D366;
+      --whatsapp-hover: #1da851;
+      --radius: 14px;
+      --shadow: 0 8px 32px rgba(0,0,0,0.14);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--color-b);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+    /* ── Utilidades ── */
+    .section-title {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      margin-bottom: 0.4em;
+      line-height: 1.2;
+    }
+    .section-sub {
+      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+      opacity: 0.78;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--whatsapp);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.35);
+    }
+    .btn-wa:hover { background: var(--whatsapp-hover); transform: translateY(-2px); }
+    .btn-wa svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    .wa-icon { display: inline-block; }
+
+    /* ────────────────────────────────────────────────
+       1. HERO
+    ──────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px 60px;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('hero1.webp');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.28) saturate(0.6);
+      z-index: 0;
+    }
+    #hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13,45,74,0.55) 0%, rgba(13,45,74,0.75) 100%);
+      z-index: 0;
+    }
+    #hero > * { position: relative; z-index: 1; }
+
+    .hero-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 8vw, 5rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .hero-logo span { color: var(--accent); }
+
+    .hero-slogan {
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      color: rgba(255,255,255,0.88);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0 auto 28px;
+      border-radius: 2px;
+    }
+
+    .hero-phone {
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 24px;
+      text-decoration: none;
+      display: block;
+      transition: color 0.2s;
+    }
+    .hero-phone:hover { color: var(--accent); }
+    .hero-phone::before {
+      content: '📞 ';
+      font-size: 0.8em;
+    }
+
+    .hero-exp {
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .hero-exp strong { color: var(--accent); }
+
+    /* ────────────────────────────────────────────────
+       2. FRASE
+    ──────────────────────────────────────────────── */
+    #frase {
+      background: var(--color-a);
+      color: var(--text-light);
+      text-align: center;
+      padding: 70px 24px;
+    }
+    #frase blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 4vw, 2rem);
+      font-style: italic;
+      max-width: 780px;
+      margin: 0 auto;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.92);
+    }
+    #frase blockquote::before { content: '\201C'; color: var(--accent); font-size: 2.5em; line-height: 0; vertical-align: -0.4em; margin-right: 6px; }
+    #frase blockquote::after  { content: '\201D'; color: var(--accent); font-size: 2.5em; line-height: 0; vertical-align: -0.4em; margin-left: 6px; }
+    #frase p {
+      margin-top: 20px;
+      font-size: 1rem;
+      opacity: 0.65;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ────────────────────────────────────────────────
+       3. SERVICIOS
+    ──────────────────────────────────────────────── */
+    #servicios {
+      background: var(--color-b);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    #servicios .section-title { color: var(--color-a); }
+    #servicios .section-sub { color: #444; }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 36px 24px 30px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--accent);
+      transition: transform 0.25s, box-shadow 0.25s;
+      text-align: left;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.16); }
+
+    .card-icon {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      color: var(--color-a);
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .card-tag {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      border-radius: 30px;
+      padding: 3px 12px;
+    }
+
+    /* ────────────────────────────────────────────────
+       4. HERO 2 (pequeño)
+    ──────────────────────────────────────────────── */
+    .hero-mini {
+      position: relative;
+      height: clamp(220px, 35vw, 420px);
+      overflow: hidden;
+    }
+    .hero-mini img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.6) saturate(0.8);
+    }
+    .hero-mini-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(13,45,74,0.6) 0%, rgba(224,123,46,0.2) 100%);
+    }
+    .hero-mini-text {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 4vw, 2.4rem);
+      font-weight: 700;
+      text-align: center;
+      padding: 0 24px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+      max-width: 700px;
+    }
+
+    /* ────────────────────────────────────────────────
+       5. HORARIO
+    ──────────────────────────────────────────────── */
+    #horario {
+      background: var(--color-a);
+      color: var(--text-light);
+      text-align: center;
+      padding: 80px 24px;
+    }
+    #horario .section-title { color: #fff; }
+
+    .horario-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      padding: 18px 40px;
+      border-radius: var(--radius);
+      margin: 28px 0 20px;
+      letter-spacing: 0.05em;
+      box-shadow: 0 4px 24px rgba(224,123,46,0.4);
+    }
+    #horario p {
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.8;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    .horario-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+    .horario-icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 0.9;
+    }
+    .horario-icon-item span:first-child { font-size: 2rem; }
+    .horario-icon-item span:last-child { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+
+    /* ────────────────────────────────────────────────
+       6. TESTIMONIOS (slider)
+    ──────────────────────────────────────────────── */
+    #testimonios {
+      background: var(--color-b);
+      padding: 80px 0;
+      text-align: center;
+      overflow: hidden;
+    }
+    #testimonios .section-title { color: var(--color-a); padding: 0 24px; }
+    #testimonios .section-sub { padding: 0 24px; }
+
+    .slider-wrapper {
+      overflow: hidden;
+      cursor: grab;
+      user-select: none;
+      padding: 10px 0 30px;
+    }
+    .slider-wrapper:active { cursor: grabbing; }
+
+    .slider-track {
+      display: flex;
+      gap: 20px;
+      padding: 10px 24px;
+      transition: transform 0.3s ease;
+      will-change: transform;
+    }
+
+    .testimonial-card {
+      flex: 0 0 clamp(260px, 80vw, 320px);
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 24px 24px;
+      box-shadow: var(--shadow);
+      text-align: left;
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--accent);
+      line-height: 1;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      opacity: 0.25;
+    }
+    .testimonial-card p {
+      font-size: 0.93rem;
+      line-height: 1.65;
+      color: #444;
+      margin-bottom: 18px;
+      padding-top: 16px;
+    }
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--color-a);
+      font-size: 0.9rem;
+    }
+    .stars { color: var(--accent); font-size: 0.9rem; margin-bottom: 4px; }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .slider-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #ccc;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .slider-dot.active { background: var(--accent); transform: scale(1.3); }
+
+    /* ────────────────────────────────────────────────
+       7. HERO 3
+    ──────────────────────────────────────────────── */
+
+    /* ────────────────────────────────────────────────
+       8. ZONAS
+    ──────────────────────────────────────────────── */
+    #zonas {
+      background: var(--color-a);
+      color: var(--text-light);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    #zonas .section-title { color: #fff; }
+    #zonas .section-sub { color: rgba(255,255,255,0.7); }
+
+    .zonas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .zona-item {
+      background: rgba(255,255,255,0.07);
+      border: 1.5px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius);
+      padding: 28px 16px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .zona-item:hover { background: rgba(224,123,46,0.18); border-color: var(--accent); }
+    .zona-item .zona-icon { font-size: 1.8rem; display: block; margin-bottom: 10px; }
+    .zona-item h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px; }
+    .zona-item p { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+    /* ────────────────────────────────────────────────
+       9. FOOTER
+    ──────────────────────────────────────────────── */
+    #footer {
+      background: #07192b;
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      padding: 60px 24px 40px;
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-tagline {
+      font-size: 0.85rem;
+      opacity: 0.5;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .footer-phone {
+      display: block;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: color 0.2s;
+    }
+    .footer-phone:hover { color: var(--accent); }
+    .footer-cta {
+      font-size: 1rem;
+      margin-top: 28px;
+      opacity: 0.6;
+    }
+    .footer-cta strong { color: var(--accent); opacity: 1; }
+    .footer-copy {
+      margin-top: 36px;
+      font-size: 0.75rem;
+      opacity: 0.35;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+    }
+
+    /* ────────────────────────────────────────────────
+       RESPONSIVE
+    ──────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .cards-grid { grid-template-columns: 1fr; max-width: 400px; }
+      .horario-icons { gap: 24px; }
+      .zonas-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* Fade-in animations */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       1. HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero" itemscope itemtype="https://schema.org/LocalBusiness">
+    <div class="hero-logo" itemprop="name">Clima<span>&amp;</span>Confort</div>
+    <p class="hero-slogan">Calor cuando más lo necesitás. Confort todo el año.</p>
+    <div class="hero-divider"></div>
+
+    <a href="tel:+541136013191" class="hero-phone" itemprop="telephone">11 3601-3191</a>
+
+    <a href="https://wa.me/541136013191?text=Hola%2C%20me%20comunico%20desde%20la%20web.%20Quisiera%20consultar%20sobre%20sus%20servicios." 
+       class="btn-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M16 2.667C8.637 2.667 2.667 8.637 2.667 16c0 2.37.632 4.588 1.736 6.503L2.667 29.333l7.07-1.696A13.28 13.28 0 0 0 16 29.333c7.363 0 13.333-5.97 13.333-13.333S23.363 2.667 16 2.667Zm0 24c-2.065 0-3.99-.553-5.643-1.516l-.404-.236-4.196 1.006 1.04-4.083-.263-.43A10.605 10.605 0 0 1 5.333 16C5.333 10.11 10.11 5.333 16 5.333S26.667 10.11 26.667 16 21.89 26.667 16 26.667Zm5.78-7.873c-.317-.159-1.873-.924-2.163-1.03-.289-.106-.5-.159-.71.16-.21.317-.814 1.029-.998 1.24-.183.21-.367.236-.683.08-.317-.16-1.337-.493-2.548-1.573-.94-.838-1.576-1.874-1.76-2.191-.184-.317-.02-.489.138-.647.142-.142.317-.369.476-.554.158-.184.21-.317.317-.528.106-.21.053-.396-.027-.555-.08-.158-.71-1.712-.972-2.344-.256-.616-.515-.532-.71-.542l-.604-.01c-.21 0-.554.08-.844.396-.29.317-1.106 1.081-1.106 2.635s1.132 3.057 1.29 3.267c.158.21 2.228 3.4 5.398 4.769.756.326 1.346.52 1.806.665.759.24 1.45.207 1.996.126.608-.09 1.873-.766 2.136-1.504.263-.738.263-1.37.184-1.503-.08-.133-.29-.21-.607-.369Z"/>
+      </svg>
+      Escribinos por WhatsApp
+    </a>
+
+    <p class="hero-exp">Más de <strong>10 años</strong> de experiencia en el rubro</p>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       2. FRASE
+  ══════════════════════════════════════════ -->
+  <section id="frase">
+    <blockquote class="fade-up">
+      Tu hogar merece el mejor cuidado. Con nosotros, la calefacción y el confort están siempre garantizados — sin sorpresas, sin demoras.
+    </blockquote>
+    <p class="fade-up">Profesionales certificados · Trabajo garantizado · Respuesta inmediata</p>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       3. SERVICIOS
+  ══════════════════════════════════════════ -->
+  <section id="servicios">
+    <h2 class="section-title fade-up">Nuestros Servicios</h2>
+    <p class="section-sub fade-up">Instalación, reparación y mantenimiento con materiales de primera calidad y garantía en todos los trabajos.</p>
+
+    <div class="cards-grid">
+
+      <article class="card fade-up" itemscope itemtype="https://schema.org/Service">
+        <span class="card-icon">🔥</span>
+        <h3 itemprop="name">Calderas</h3>
+        <p itemprop="description">Instalación, service y reparación de calderas a gas de todas las marcas. Mantenimiento preventivo para evitar fallas en invierno y maximizar la eficiencia energética.</p>
+        <span class="card-tag">Instalación · Service · Reparación</span>
+      </article>
+
+      <article class="card fade-up" itemscope itemtype="https://schema.org/Service">
+        <span class="card-icon">🏊</span>
+        <h3 itemprop="name">Climatizador de Piscinas</h3>
+        <p itemprop="description">Instalación y mantenimiento de climatizadores para piscinas. Disfruta de tu pileta durante todo el año con la temperatura ideal, de forma eficiente y segura.</p>
+        <span class="card-tag">Instalación · Mantenimiento</span>
+      </article>
+
+      <article class="card fade-up" itemscope itemtype="https://schema.org/Service">
+        <span class="card-icon">🌡️</span>
+        <h3 itemprop="name">Losa Radiante</h3>
+        <p itemprop="description">Diseño e instalación de sistemas de losa radiante. La calefacción más confortable y eficiente para tu hogar, distribuida de manera uniforme desde el suelo.</p>
+        <span class="card-tag">Diseño · Instalación</span>
+      </article>
+
+      <article class="card fade-up" itemscope itemtype="https://schema.org/Service">
+        <span class="card-icon">♨️</span>
+        <h3 itemprop="name">Radiadores</h3>
+        <p itemprop="description">Instalación y reparación de radiadores de aluminio y hierro. Completamos, ampliamos o renovamos tu sistema de radiadores con asesoramiento personalizado.</p>
+        <span class="card-tag">Instalación · Reparación</span>
+      </article>
+
+      <article class="card fade-up" itemscope itemtype="https://schema.org/Service">
+        <span class="card-icon">💧</span>
+        <h3 itemprop="name">Termotanques</h3>
+        <p itemprop="description">Instalación y reparación de termotanques a gas y eléctricos. Agua caliente garantizada durante todo el año para toda tu familia.</p>
+        <span class="card-tag">Instalación · Reparación</span>
+      </article>
+
+      <article class="card fade-up" itemscope itemtype="https://schema.org/Service">
+        <span class="card-icon">🚿</span>
+        <h3 itemprop="name">Calefones</h3>
+        <p itemprop="description">Instalación y service de calefones a gas y paso continuo. Máxima eficiencia en el calentamiento de agua con los modelos más modernos del mercado.</p>
+        <span class="card-tag">Instalación · Service</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       4. HERO MINI 2
+  ══════════════════════════════════════════ -->
+  <div class="hero-mini">
+    <img src="hero2.webp" alt="Radiador instalado en sala moderna - Clima&amp;Confort" loading="lazy" />
+    <div class="hero-mini-overlay">
+      <p class="hero-mini-text">Calidad garantizada en cada instalación</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       5. HORARIO
+  ══════════════════════════════════════════ -->
+  <section id="horario">
+    <h2 class="section-title fade-up">Servicio de Emergencia</h2>
+    <div class="horario-badge fade-up">24 hs · 365 días al año</div>
+    <p class="fade-up">Sabemos que las emergencias no avisan. Por eso estamos disponibles en todo momento para darte una solución rápida, segura y sin costo adicional por urgencia nocturna o en fines de semana.</p>
+
+    <div class="horario-icons fade-up">
+      <div class="horario-icon-item">
+        <span>🌙</span>
+        <span>Guardia nocturna</span>
+      </div>
+      <div class="horario-icon-item">
+        <span>📅</span>
+        <span>Fines de semana</span>
+      </div>
+      <div class="horario-icon-item">
+        <span>🎉</span>
+        <span>Feriados</span>
+      </div>
+      <div class="horario-icon-item">
+        <span>⚡</span>
+        <span>Respuesta inmediata</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       6. TESTIMONIOS
+  ══════════════════════════════════════════ -->
+  <section id="testimonios">
+    <h2 class="section-title fade-up">Lo que dicen nuestros clientes</h2>
+    <p class="section-sub fade-up">Más de una década resolviendo problemas reales con responsabilidad y profesionalismo.</p>
+
+    <div class="slider-wrapper" id="sliderWrapper">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Se me rompió la caldera un martes a las 11 de la noche en pleno invierno. Llamé y en menos de una hora ya tenían al técnico en casa. Resolvieron el problema esa misma noche. Nunca había visto semejante respuesta. Totalmente recomendables.</p>
+          <span class="testimonial-author">— Marcelo G., Palermo</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Instalaron la losa radiante en toda la planta baja de mi casa. El trabajo fue impecable, limpio y en el tiempo que prometieron. Encima me explicaron cómo usar el sistema de la manera más eficiente. El invierno pasado fue el más confortable de mi vida.</p>
+          <span class="testimonial-author">— Alejandro M., Caballito</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Vine de tener una pésima experiencia con otro gasista y me daba miedo contratar de nuevo. Pero estos chicos me dieron un presupuesto claro, sin letra chica, y cumplieron todo a la perfección. Mi piscina ahora está climatizada todo el año.</p>
+          <span class="testimonial-author">— Carmela V., Tigre</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Llevo tres años contratando el mantenimiento anual de mi caldera con ellos. Siempre cumplen fecha, son puntuales y dejan todo en orden. Desde que los contraté no tuve ningún problema en invierno. Vale la pena el servicio preventivo.</p>
+          <span class="testimonial-author">— Ignacio R., Vicente López</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Me instalaron un termotanque nuevo en tiempo récord. El técnico fue muy profesional, me recomendó el modelo más eficiente para la cantidad de personas en casa y el ahorro en el gas fue notable desde el primer mes. Muy satisfecha.</p>
+          <span class="testimonial-author">— Marta L., Ramos Mejía</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Tuve una pérdida de gas en el calefón un sábado a la mañana. Llamé sin esperanza de que vinieran rápido y me sorprendieron: en 40 minutos estaban. Solucionaron el problema y verificaron todo el sistema sin cobrarme extra. Gente de palabra.</p>
+          <span class="testimonial-author">— Nicolás F., San Martín</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       7. HERO MINI 3
+  ══════════════════════════════════════════ -->
+  <div class="hero-mini">
+    <img src="hero3.webp" alt="Caldera y lavarropas instalados - Clima&amp;Confort" loading="lazy" />
+    <div class="hero-mini-overlay">
+      <p class="hero-mini-text">Soluciones integrales para tu hogar</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       8. ZONAS
+  ══════════════════════════════════════════ -->
+  <section id="zonas">
+    <h2 class="section-title fade-up">Zonas de Servicio</h2>
+    <p class="section-sub fade-up" style="color:rgba(255,255,255,0.65)">Operamos en toda la Ciudad de Buenos Aires y el conurbano bonaerense.</p>
+
+    <div class="zonas-grid">
+      <div class="zona-item fade-up">
+        <span class="zona-icon">🏙️</span>
+        <h3>CABA</h3>
+        <p>Toda la Ciudad Autónoma de Buenos Aires</p>
+      </div>
+      <div class="zona-item fade-up">
+        <span class="zona-icon">🌿</span>
+        <h3>Zona Norte</h3>
+        <p>Vicente López, San Isidro, Tigre, San Fernando</p>
+      </div>
+      <div class="zona-item fade-up">
+        <span class="zona-icon">🏘️</span>
+        <h3>Zona Oeste</h3>
+        <p>Morón, Merlo, Ituzaingó, San Martín, Tres de Febrero</p>
+      </div>
+      <div class="zona-item fade-up">
+        <span class="zona-icon">🌊</span>
+        <h3>Zona Sur</h3>
+        <p>Lomas de Zamora, Lanús, Avellaneda, Quilmes, Almirante Brown</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       9. FOOTER
+  ══════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-logo">Clima<span>&amp;</span>Confort</div>
+    <p class="footer-tagline">Instalación · Mantenimiento · Emergencias</p>
+
+    <a href="tel:+541136013191" class="footer-phone">📞 11 3601-3191</a>
+
+    <a href="https://wa.me/541136013191?text=Hola%2C%20me%20comunico%20desde%20la%20web.%20Quisiera%20consultar%20sobre%20sus%20servicios."
+       class="btn-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M16 2.667C8.637 2.667 2.667 8.637 2.667 16c0 2.37.632 4.588 1.736 6.503L2.667 29.333l7.07-1.696A13.28 13.28 0 0 0 16 29.333c7.363 0 13.333-5.97 13.333-13.333S23.363 2.667 16 2.667Zm0 24c-2.065 0-3.99-.553-5.643-1.516l-.404-.236-4.196 1.006 1.04-4.083-.263-.43A10.605 10.605 0 0 1 5.333 16C5.333 10.11 10.11 5.333 16 5.333S26.667 10.11 26.667 16 21.89 26.667 16 26.667Zm5.78-7.873c-.317-.159-1.873-.924-2.163-1.03-.289-.106-.5-.159-.71.16-.21.317-.814 1.029-.998 1.24-.183.21-.367.236-.683.08-.317-.16-1.337-.493-2.548-1.573-.94-.838-1.576-1.874-1.76-2.191-.184-.317-.02-.489.138-.647.142-.142.317-.369.476-.554.158-.184.21-.317.317-.528.106-.21.053-.396-.027-.555-.08-.158-.71-1.712-.972-2.344-.256-.616-.515-.532-.71-.542l-.604-.01c-.21 0-.554.08-.844.396-.29.317-1.106 1.081-1.106 2.635s1.132 3.057 1.29 3.267c.158.21 2.228 3.4 5.398 4.769.756.326 1.346.52 1.806.665.759.24 1.45.207 1.996.126.608-.09 1.873-.766 2.136-1.504.263-.738.263-1.37.184-1.503-.08-.133-.29-.21-.607-.369Z"/>
+      </svg>
+      ¡Contactanos ya!
+    </a>
+
+    <p class="footer-cta">No esperes al frío — <strong>llamanos hoy</strong> y resolvemos tu problema.</p>
+
+    <p class="footer-copy">© 2025 Clima&amp;Confort · Todos los derechos reservados · CABA y GBA, Argentina</p>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       JS: Slider + Scroll animations
+  ══════════════════════════════════════════ -->
+  <script>
+    /* ── Slider de testimonios (drag/touch) ── */
+    const wrapper = document.getElementById('sliderWrapper');
+    const track   = document.getElementById('sliderTrack');
+    const dotsContainer = document.getElementById('sliderDots');
+    const cards   = track.querySelectorAll('.testimonial-card');
+
+    let isDragging = false, startX = 0, scrollLeft = 0;
+
+    // Create dots
+    cards.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => scrollToCard(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    function updateDots() {
+      const scrollPos = wrapper.scrollLeft;
+      const cardW = cards[0].offsetWidth + 20;
+      const idx = Math.round(scrollPos / cardW);
+      dotsContainer.querySelectorAll('.slider-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === idx);
+      });
+    }
+
+    function scrollToCard(i) {
+      const cardW = cards[0].offsetWidth + 20;
+      wrapper.scrollTo({ left: cardW * i, behavior: 'smooth' });
+    }
+
+    // Make wrapper scrollable horizontally
+    wrapper.style.overflowX = 'auto';
+    wrapper.style.scrollSnapType = 'x mandatory';
+    wrapper.style.webkitOverflowScrolling = 'touch';
+    wrapper.style.scrollbarWidth = 'none';
+    wrapper.style.msOverflowStyle = 'none';
+    cards.forEach(c => { c.style.scrollSnapAlign = 'start'; });
+
+    wrapper.addEventListener('scroll', updateDots);
+
+    // Mouse drag
+    wrapper.addEventListener('mousedown', e => {
+      isDragging = true;
+      startX = e.pageX - wrapper.offsetLeft;
+      scrollLeft = wrapper.scrollLeft;
+      wrapper.style.cursor = 'grabbing';
+    });
+    window.addEventListener('mouseup', () => { isDragging = false; wrapper.style.cursor = 'grab'; });
+    wrapper.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - wrapper.offsetLeft;
+      wrapper.scrollLeft = scrollLeft - (x - startX);
+    });
+
+    /* ── Intersection Observer (fade-up) ── */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
